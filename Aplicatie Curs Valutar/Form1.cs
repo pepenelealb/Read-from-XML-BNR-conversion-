@@ -14,13 +14,18 @@ namespace Aplicatie_Curs_Valutar
 {
     public partial class Form1 : Form
     {
+
+        //pe 10 zile string url = @"https://www.bnr.ro/nbrfxrates10days.xml";
+        public string url = @"https://www.bnr.ro/files/xml/years/nbrfxrates2019.xml";
+        
         public Form1()
         {
             //legam xml
             InitializeComponent();
-            string url = @"https://www.bnr.ro/nbrfxrates10days.xml";
-            XmlDocument xmlDoc = new XmlDocument();
-            xmlDoc.Load(url);
+
+
+             XmlDocument xmlDoc = new XmlDocument();
+             xmlDoc.Load(url);
             //facem lista de noduri
             XmlNodeList Lista_Cuburi = xmlDoc.DocumentElement.GetElementsByTagName("Cube");
             foreach (XmlNode Cube in Lista_Cuburi)
@@ -32,15 +37,15 @@ namespace Aplicatie_Curs_Valutar
             }
             //xmlDoc.
         }
-
+        
         private void btn_fa_conversie_Click(object sender, EventArgs e)
         {
             if (cmb_date.SelectedItem != null)
             {
                 string datee = cmb_date.SelectedItem.ToString();
                 string currency = cmb_alege_valuta.SelectedItem.ToString();
+               
 
-                string url = @"https://www.bnr.ro/nbrfxrates10days.xml";
                 XmlDocument xmlDoc = new XmlDocument();
                 xmlDoc.Load(url);
 
@@ -87,7 +92,8 @@ namespace Aplicatie_Curs_Valutar
             if (cmb_date.SelectedItem != null)
             {
                 string datee = cmb_date.SelectedItem.ToString();
-                string url = @"https://www.bnr.ro/nbrfxrates10days.xml";
+
+
                 XmlDocument xmlDoc = new XmlDocument();
                 xmlDoc.Load(url);
 
@@ -136,7 +142,6 @@ namespace Aplicatie_Curs_Valutar
                 string datee = cmb_date.SelectedItem.ToString();
                 string currency = cmb_alege_valuta.SelectedItem.ToString();
 
-                string url = @"https://www.bnr.ro/nbrfxrates10days.xml";
                 XmlDocument xmlDoc = new XmlDocument();
                 xmlDoc.Load(url);
 
