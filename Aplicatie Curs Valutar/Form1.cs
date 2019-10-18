@@ -20,12 +20,12 @@ namespace Aplicatie_Curs_Valutar
         
         public Form1()
         {
-            //legam xml
+         
             InitializeComponent();
-
 
              XmlDocument xmlDoc = new XmlDocument();
              xmlDoc.Load(url);
+
             //facem lista de noduri
             XmlNodeList Lista_Cuburi = xmlDoc.DocumentElement.GetElementsByTagName("Cube");
             foreach (XmlNode Cube in Lista_Cuburi)

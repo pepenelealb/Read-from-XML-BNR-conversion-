@@ -37,6 +37,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.cmb_year = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // cmb_alege_valuta
@@ -77,11 +78,14 @@
             this.txt_afiseaza_rata_conv.BackColor = System.Drawing.Color.GhostWhite;
             this.txt_afiseaza_rata_conv.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txt_afiseaza_rata_conv.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_afiseaza_rata_conv.ForeColor = System.Drawing.SystemColors.HotTrack;
             this.txt_afiseaza_rata_conv.Location = new System.Drawing.Point(181, 213);
             this.txt_afiseaza_rata_conv.Name = "txt_afiseaza_rata_conv";
             this.txt_afiseaza_rata_conv.ReadOnly = true;
             this.txt_afiseaza_rata_conv.Size = new System.Drawing.Size(100, 18);
             this.txt_afiseaza_rata_conv.TabIndex = 6;
+            this.txt_afiseaza_rata_conv.Tag = "";
+            this.txt_afiseaza_rata_conv.Text = "RON";
             // 
             // label3
             // 
@@ -131,12 +135,24 @@
             this.label5.TabIndex = 11;
             this.label5.Text = "Alege anul";
             // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Times New Roman", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.label6.Location = new System.Drawing.Point(221, 213);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(40, 18);
+            this.label6.TabIndex = 13;
+            this.label6.Text = "RON";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.GhostWhite;
             this.ClientSize = new System.Drawing.Size(384, 244);
+            this.Controls.Add(this.label6);
             this.Controls.Add(this.cmb_year);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
@@ -165,6 +181,7 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.ComboBox cmb_year;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label6;
     }
 }
 
