@@ -38,6 +38,9 @@
             this.cmb_year = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.valideazaXMLToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // cmb_alege_valuta
@@ -146,6 +149,23 @@
             this.label6.TabIndex = 13;
             this.label6.Text = "RON";
             // 
+            // menuStrip1
+            // 
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.valideazaXMLToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(384, 24);
+            this.menuStrip1.TabIndex = 14;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // valideazaXMLToolStripMenuItem
+            // 
+            this.valideazaXMLToolStripMenuItem.Name = "valideazaXMLToolStripMenuItem";
+            this.valideazaXMLToolStripMenuItem.Size = new System.Drawing.Size(94, 20);
+            this.valideazaXMLToolStripMenuItem.Text = "Valideaza XML";
+            this.valideazaXMLToolStripMenuItem.Click += new System.EventHandler(this.valideazaXMLToolStripMenuItem_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -162,9 +182,13 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.cmb_alege_valuta);
+            this.Controls.Add(this.menuStrip1);
+            this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
             this.Text = "prin Citire XML de la BNR";
             this.Load += new System.EventHandler(this.Form1_Load);
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -182,6 +206,8 @@
         private System.Windows.Forms.ComboBox cmb_year;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem valideazaXMLToolStripMenuItem;
     }
 }
 

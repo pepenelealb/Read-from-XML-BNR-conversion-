@@ -170,5 +170,11 @@ namespace Aplicatie_Curs_Valutar
                 }
             }
         }
+
+        private void valideazaXMLToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form_ValideazaXML v = new Form_ValideazaXML();
+                v.Show();
+        }
     }
 }
